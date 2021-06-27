@@ -32,7 +32,13 @@ export GOPATH=/opt/amass
 
 go get -v github.com/OWASP/Amass/v3/...
 
-ln -s /opt/amass/bin/amass /usr/local/bin/amass
+cd /opt/amass/src/github.com/OWASP/Amass
+
+go install ./..
+
+cd /opt/
+
+#ln -s /opt/amass/bin/amass /usr/local/bin/amass
 
 echo "Instalando o httprobe"
 
