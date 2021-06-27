@@ -26,17 +26,17 @@ go get -u github.com/tomnomnom/assetfinder
 ln -s /opt/assetfinder/bin/assetfinder /usr/local/bin/assetfinder
 
 
-echo "Instalando o AMASS"
+#echo "Instalando o AMASS"
 
-export GOPATH=/opt/amass
+#export GOPATH=/opt/amass
 
-go get -v github.com/OWASP/Amass/v3/...
+#go get -v github.com/OWASP/Amass/v3/...
 
-cd /opt/amass/src/github.com/OWASP/Amass
+#cd /opt/amass/src/github.com/OWASP/Amass
 
-go install ./..
+#go install ./..
 
-cd /opt/
+#cd /opt/
 
 #ln -s /opt/amass/bin/amass /usr/local/bin/amass
 
