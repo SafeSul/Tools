@@ -79,6 +79,8 @@ ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 echo "Instalando o naabu"
 
+sudo apt install -y libpcap-dev
+
 export GOPATH=/opt/naabu
 
 GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
